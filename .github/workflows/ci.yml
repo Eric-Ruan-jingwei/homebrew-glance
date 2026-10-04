@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  cask:
+    name: Style, audit, fetch
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Link tap
+        run: |
+          tapdir="$(brew --repository)/Library/Taps/eric-ruan-jingwei/homebrew-glance"
+          mkdir -p "$(dirname "$tapdir")"
+          ln -sfn "$GITHUB_WORKSPACE" "$tapdir"
+
+      - name: Style
+        run: brew style --cask eric-ruan-jingwei/glance/glance
+
+      - name: Audit
+        run: brew audit --cask --online eric-ruan-jingwei/glance/glance
+
+      - name: Fetch
+        run: brew fetch --cask eric-ruan-jingwei/glance/glance
