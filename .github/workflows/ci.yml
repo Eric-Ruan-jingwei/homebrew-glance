@@ -26,7 +26,7 @@ jobs:
         run: brew style --cask eric-ruan-jingwei/glance/glance
 
       - name: Audit
-        run: brew audit --cask --online eric-ruan-jingwei/glance/glance
+        run: brew audit --cask eric-ruan-jingwei/glance/glance
 
       - name: Fetch
         run: brew fetch --cask eric-ruan-jingwei/glance/glance
