@@ -1,6 +1,6 @@
 cask "glance" do
-  version "0.27.0-beta.1"
-  sha256 "a0f0075453500363481f0e975db426b2ea678039f946aa131ecfd4fec9bab172"
+  version "0.27.0-beta.2"
+  sha256 "885d1f2cae91775e3523ae5a9a4f8a1fe06a780fcb45a4c918c06b1fcbc9dc73"
 
   url "https://github.com/Eric-Ruan-jingwei/Glance/releases/download/v#{version}/Glance-0.27.0.dmg"
   name "Glance"
