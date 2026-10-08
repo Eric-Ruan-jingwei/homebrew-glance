@@ -37,7 +37,7 @@ Do not `brew trust Eric-Ruan-jingwei/glance` for the whole tap unless you intend
 
 ## Beta notice
 
-Glance 0.27.0 Beta 2 is ad-hoc signed and is not Apple notarized. Homebrew does not bypass Gatekeeper. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**. Do not disable Gatekeeper globally.
+Glance 0.27.0 Beta 3 is ad-hoc signed and is not Apple notarized. Homebrew does not bypass Gatekeeper. If macOS blocks the first launch, use **System Settings → Privacy & Security → Open Anyway**. Do not disable Gatekeeper globally.
 
 ## Requirements
 
